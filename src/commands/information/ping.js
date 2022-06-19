@@ -12,6 +12,7 @@ let ping = client.ws.ping;
  .setTitle('Pong!')
 .addField(`WS :`, `${ws}`)
  .addField(`API :`, `${ping}`)
+ .addField(`Uptime :`, `<t:${parseInt(client.readyTimestamp / 1000)}:R>`)
  return message.reply({ embeds: [pingee] })
 }
 }
